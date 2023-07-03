@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="main_green">#2C3F3B</color>
+    <color name="second_green">#4AB05C</color>
+    <color name="gray_black">#040404</color>
+    <color name="gray_bg">#202020</color>
+    <color name="transparent_white">#DDE6ED</color>
 </resources>

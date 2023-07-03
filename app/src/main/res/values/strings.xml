@@ -2,4 +2,7 @@
     <string name="app_name">PokeApp</string>
 
     <string name="search_description">Search for a pokemon by name or National Pokédex Number</string>
+
+    <string name="pokemon_str">Pokémon</string>
+    <string name="hint_text">Bulbasaur</string>
 </resources>

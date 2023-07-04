@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PokeApp</string>
+
+    <string name="search_description">Search for a pokemon by name or National Pokédex Number</string>
+
+    <string name="pokemon_str">Pokémon</string>
+    <string name="hint_text">Bulbasaur</string>
+    <string name="items_str">Items</string>
+    <string name="moves_str">Moves</string>
+    <string name="types_str">Types</string>
+    <string name="fav_str">Favorites</string>
 </resources>

@@ -5,4 +5,8 @@
 
     <string name="pokemon_str">Pokémon</string>
     <string name="hint_text">Bulbasaur</string>
+    <string name="items_str">Items</string>
+    <string name="moves_str">Moves</string>
+    <string name="types_str">Types</string>
+    <string name="fav_str">Favorites</string>
 </resources>

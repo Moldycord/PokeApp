@@ -40,6 +40,7 @@
         android:drawablePadding="@dimen/small_padding"
         android:hint="@string/hint_text"
         android:importantForAutofill="no"
+        android:inputType="text"
         android:padding="@dimen/base_margin"
         android:textColorHint="@color/transparent_white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_view_description" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_pokemon"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/base_margin"
@@ -87,6 +89,130 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/text_view_card_title"
                 app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_moves"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/base_margin"
+        android:backgroundTint="@color/orange_bag"
+        app:cardCornerRadius="@dimen/base_margin"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_pokemon"
+        app:layout_constraintWidth_percent=".47">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_items"
+                style="@style/H2_Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/items_str"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/base_margin"
+        android:backgroundTint="@color/blue_moves"
+        app:cardCornerRadius="@dimen/base_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/card_view_pokemon"
+        app:layout_constraintWidth_percent=".47">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_moves"
+                style="@style/H2_Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/moves_str"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_types"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/base_margin"
+        android:backgroundTint="@color/yellow_types"
+        app:cardCornerRadius="@dimen/base_margin"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_items"
+        app:layout_constraintWidth_percent=".47">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_types"
+                style="@style/H2_Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/types_str"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_fav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/base_margin"
+        android:backgroundTint="@color/purple_fav"
+        app:cardCornerRadius="@dimen/base_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/card_view_moves"
+        app:layout_constraintWidth_percent=".47">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_fav"
+                style="@style/H2_Text.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:text="@string/fav_str"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

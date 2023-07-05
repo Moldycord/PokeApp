@@ -1,4 +1,4 @@
-package com.danieer.galvez.pokeapp
+package com.danieer.galvez.pokeapp.presentation.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

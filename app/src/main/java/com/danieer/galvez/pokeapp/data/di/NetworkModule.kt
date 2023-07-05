@@ -4,6 +4,8 @@ import android.app.Application
 import com.danieer.galvez.pokeapp.data.api.service.PokemonApiService
 import dagger.Module
 import dagger.Provides
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -50,6 +52,8 @@ class NetworkModule {
     fun provideApiService(retrofit: Retrofit): PokemonApiService =
         retrofit.create(PokemonApiService::class.java)
 
+    @Provides
+    fun provideDispatcher(): CoroutineDispatcher = Dispatchers.IO
 
     companion object {
         const val BASE_URL = "https://pokeapi.co/api/v2/"

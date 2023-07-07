@@ -20,7 +20,8 @@ class HomeViewModel @Inject constructor(
 
 
     fun getPokemonByNameOrId(nameOrId: String) {
-        getPokemonUseCase(nameOrId).onEach { _pokemonData.value = it }.catch { println(it.message) }
+        getPokemonUseCase(nameOrId).onEach { _pokemonData.value = it }
+            .catch { println(it.message) }
             .launchIn(viewModelScope)
     }
 

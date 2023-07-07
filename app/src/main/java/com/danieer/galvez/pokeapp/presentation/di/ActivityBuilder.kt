@@ -1,6 +1,6 @@
 package com.danieer.galvez.pokeapp.presentation.di
 
-import com.danieer.galvez.pokeapp.presentation.ui.activity.HomeActivity
+import com.danieer.galvez.pokeapp.presentation.ui.activity.PokemonSearchActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,5 +8,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityBuilder {
 
     @ContributesAndroidInjector
-    abstract fun bindHomeActivity(): HomeActivity
+    abstract fun bindPokemonSearchActivity(): PokemonSearchActivity
 }

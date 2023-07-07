@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
-class HomeViewModel @Inject constructor(
+class PokemonSearchViewModel @Inject constructor(
     private val getPokemonUseCase: GetPokemonUseCase
 ) : ViewModel() {
 

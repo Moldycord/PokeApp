@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
-class HomeViewModel @Inject constructor(
+class PokemonSearchViewModel @Inject constructor(
     private val getPokemonUseCase: GetPokemonUseCase
 ) : ViewModel() {
 
@@ -20,7 +20,8 @@ class HomeViewModel @Inject constructor(
 
 
     fun getPokemonByNameOrId(nameOrId: String) {
-        getPokemonUseCase(nameOrId).onEach { _pokemonData.value = it }.catch { println(it.message) }
+        getPokemonUseCase(nameOrId).onEach { _pokemonData.value = it }
+            .catch { println(it.message) }
             .launchIn(viewModelScope)
     }
 
